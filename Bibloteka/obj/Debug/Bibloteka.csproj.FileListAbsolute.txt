@@ -1,0 +1,15 @@
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\bin\Debug\Bibloteka.exe.config
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\bin\Debug\Bibloteka.exe
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\bin\Debug\Bibloteka.pdb
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\obj\Debug\Bibloteka.csprojAssemblyReference.cache
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\obj\Debug\MainWindow.g.cs
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\obj\Debug\App.g.cs
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\obj\Debug\Bibloteka_MarkupCompile.cache
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\obj\Debug\Bibloteka_MarkupCompile.lref
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\obj\Debug\MainWindow.baml
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\obj\Debug\Bibloteka.g.resources
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\obj\Debug\Bibloteka.Properties.Resources.resources
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\obj\Debug\Bibloteka.csproj.GenerateResource.cache
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\obj\Debug\Bibloteka.csproj.CoreCompileInputs.cache
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\obj\Debug\Bibloteka.exe
+C:\Users\100065164\source\repos\Bibloteka\Bibloteka\obj\Debug\Bibloteka.pdb

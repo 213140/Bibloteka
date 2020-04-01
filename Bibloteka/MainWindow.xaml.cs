@@ -24,5 +24,12 @@ namespace Bibloteka
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            List<Book> Book_list = new List<Book>();
+            Book_list.Add(new Book(text_box_book_name.Text, "A.M.", 123, false));
+            text_box_result.Text = Book_list[0].book_name + " " + Book_list[0].book_author;
+        }
     }
 }
