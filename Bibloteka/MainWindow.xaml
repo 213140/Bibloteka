@@ -10,6 +10,10 @@
         <Button Content="Button" HorizontalAlignment="Left" Margin="84,61,0,0" VerticalAlignment="Top" Width="91" Height="61" Click="Button_Click"/>
         <TextBox x:Name="text_box_book_name" HorizontalAlignment="Left" Height="23" Margin="271,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="text_box_result" HorizontalAlignment="Left" Height="23" Margin="271,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="connect_button" Content="Connect" HorizontalAlignment="Left" Margin="84,293,0,0" VerticalAlignment="Top" Width="75" Click="Connect_button_Click"/>
+        <TextBox x:Name="textbox_connection_status" HorizontalAlignment="Left" Height="23" Margin="203,293,0,0" TextWrapping="Wrap" Text="empty" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button_getData_from_DB" Content="GetDatas" HorizontalAlignment="Left" Margin="367,293,0,0" VerticalAlignment="Top" Width="75" Click="Button_getData_from_DB_Click"/>
+        <TextBox x:Name="textbox_data_from_DB" HorizontalAlignment="Left" Height="23" Margin="498,290,0,0" TextWrapping="Wrap" Text="empty" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

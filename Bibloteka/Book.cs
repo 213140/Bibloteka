@@ -12,13 +12,7 @@ namespace Bibloteka
         public string book_author;
         public int page_quantity;
         public bool booked;
-        public Book(string name, string author, int pages, bool reservation_status)
-        {
-            book_name = name;
-            book_author = author;
-            page_quantity = pages;
-            booked = reservation_status;
-        }
+
         public Book(string name)
         {
             book_name = name;
@@ -26,5 +20,13 @@ namespace Bibloteka
             page_quantity = 1;
             booked = false;
         }
+        public Book(string name, string author, int pages, bool reservation_status)
+        {
+            book_name = name;
+            book_author = author;
+            page_quantity = pages;
+            booked = reservation_status;
+        }
+
     }
 }
