@@ -27,13 +27,9 @@ namespace Bibloteka
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            List<Book> Book_list = new List<Book>();
-            Book_list.Add(new Book(text_box_book_name.Text, "A.M.", 123, false));
-            text_box_result.Text = Book_list[0].book_name + " " + Book_list[0].book_author;
-        }
+        //List<Book> Book_list = new List<Book>();
+        //Book_list.Add(new Book(text_box_book_name.Text, "A.M.", 123, false));
+        //text_box_result.Text = Book_list[0].book_name + " " + Book_list[0].book_author;
 
         private void Connect_button_Click(object sender, RoutedEventArgs e)
         {
@@ -57,13 +53,26 @@ namespace Bibloteka
 
         private void Button_getData_from_DB_Click(object sender, RoutedEventArgs e)
         {
-            String sqlSelectQuery = "SELECT * FROM sys.table";
+            int new_book_quantity = 0;
+            int if_available = 0;
+            try
+            {
+                 new_book_quantity = Int32.Parse(textbox_newbookQUANTITY.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            if (new_book_quantity > 0) { if_available = 1;}
+            String sqlSelectQuery = "INSERT INTO bibloteka.books VALUES ('" + textbox_newbookID.Text + "', '" + textbox_newbookNAME.Text + "', '" + textbox_newbookAUTHOR.Text + "', '" + textbox_newbookPAGES.Text + "', '" + textbox_newbookQUANTITY.Text + "', '" + if_available.ToString() + "')";
+            MessageBox.Show(sqlSelectQuery);
             MySqlCommand cmd = new MySqlCommand(sqlSelectQuery, connection);
             MySqlDataReader dr = cmd.ExecuteReader();
-            if(dr.Read())
-            {
-                textbox_data_from_DB.Text = dr["name"].ToString();
-            }
+            dr.Read();
+            //if(dr.Read())
+           // {
+             //   textbox_data_from_DB.Text = dr[0].ToString() + " " + dr[1].ToString(); ;
+          //  }
             
         }
     }

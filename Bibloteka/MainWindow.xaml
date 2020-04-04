@@ -5,15 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bibloteka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="84,61,0,0" VerticalAlignment="Top" Width="91" Height="61" Click="Button_Click"/>
-        <TextBox x:Name="text_box_book_name" HorizontalAlignment="Left" Height="23" Margin="271,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="text_box_result" HorizontalAlignment="Left" Height="23" Margin="271,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="connect_button" Content="Connect" HorizontalAlignment="Left" Margin="84,293,0,0" VerticalAlignment="Top" Width="75" Click="Connect_button_Click"/>
-        <TextBox x:Name="textbox_connection_status" HorizontalAlignment="Left" Height="23" Margin="203,293,0,0" TextWrapping="Wrap" Text="empty" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button_getData_from_DB" Content="GetDatas" HorizontalAlignment="Left" Margin="367,293,0,0" VerticalAlignment="Top" Width="75" Click="Button_getData_from_DB_Click"/>
-        <TextBox x:Name="textbox_data_from_DB" HorizontalAlignment="Left" Height="23" Margin="498,290,0,0" TextWrapping="Wrap" Text="empty" VerticalAlignment="Top" Width="120"/>
+        Title="MainWindow" Height="243.6" Width="423.2">
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.274"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Button x:Name="connect_button" Content="Connect" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Width="75" Click="Connect_button_Click" Height="60" FontSize="16"/>
+        <TextBox x:Name="textbox_connection_status" HorizontalAlignment="Left" Height="21" Margin="90,13,0,0" TextWrapping="Wrap" Text="empty" VerticalAlignment="Top" Width="64"/>
+        <Button x:Name="button_add_book" Content="AddBook" HorizontalAlignment="Left" Margin="179,16,0,0" VerticalAlignment="Top" Width="206" Click="Button_getData_from_DB_Click" Height="46"/>
+        <TextBox x:Name="textbox_newbookID" HorizontalAlignment="Left" Height="23" Margin="265,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="179,67,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Height="20" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="179,92,0,0" TextWrapping="Wrap" Text="Book name" VerticalAlignment="Top" Height="20" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="179,117,0,0" TextWrapping="Wrap" Text="Author" VerticalAlignment="Top" Height="20" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="179,142,0,0" TextWrapping="Wrap" Text="Pages" VerticalAlignment="Top" Height="20" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="179,167,0,0" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Height="20" Width="66"/>
+        <TextBox x:Name="textbox_newbookNAME" HorizontalAlignment="Left" Height="23" Margin="265,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textbox_newbookAUTHOR" HorizontalAlignment="Left" Height="23" Margin="265,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textbox_newbookPAGES" HorizontalAlignment="Left" Height="23" Margin="265,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textbox_newbookQUANTITY" HorizontalAlignment="Left" Height="23" Margin="265,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
