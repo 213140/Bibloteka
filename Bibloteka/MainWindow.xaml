@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bibloteka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="243.6" Width="423.2">
+        Title="MainWindow" Height="248.409" Width="919.213">
     <Grid RenderTransformOrigin="0.5,0.5">
         <Grid.RenderTransform>
             <TransformGroup>
@@ -28,6 +28,20 @@
         <TextBox x:Name="textbox_newbookAUTHOR" HorizontalAlignment="Left" Height="23" Margin="265,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textbox_newbookPAGES" HorizontalAlignment="Left" Height="23" Margin="265,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textbox_newbookQUANTITY" HorizontalAlignment="Left" Height="23" Margin="265,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button_add_delete_clients" Content="Add/Delete clients" HorizontalAlignment="Left" Margin="412,19,0,0" VerticalAlignment="Top" Width="206" Click="Button_getData_from_DB_Click" Height="46"/>
+        <TextBox x:Name="textbox_client_name" HorizontalAlignment="Left" Height="23" Margin="498,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="412,70,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="20" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="412,95,0,0" TextWrapping="Wrap" Text="Surname" VerticalAlignment="Top" Height="20" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="412,120,0,0" TextWrapping="Wrap" Text="Pesel" VerticalAlignment="Top" Height="20" Width="66"/>
+        <TextBox x:Name="textbox_client_surname" HorizontalAlignment="Left" Height="23" Margin="498,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textbox_client_pesel" HorizontalAlignment="Left" Height="23" Margin="498,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button_add_delete_orders" Content="Add/Delete orders" HorizontalAlignment="Left" Margin="662,19,0,0" VerticalAlignment="Top" Width="206" Click="Button_getData_from_DB_Click" Height="46"/>
+        <TextBox x:Name="textbox_bookForOrder_ID" HorizontalAlignment="Left" Height="23" Margin="748,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="662,70,0,0" TextWrapping="Wrap" Text="Book ID" VerticalAlignment="Top" Height="20" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="662,95,0,0" TextWrapping="Wrap" Text="Client ID" VerticalAlignment="Top" Height="20" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="662,120,0,0" TextWrapping="Wrap" Text="Do kiedy" VerticalAlignment="Top" Height="20" Width="66"/>
+        <TextBox x:Name="textbox_order_client_ID" HorizontalAlignment="Left" Height="23" Margin="748,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textbox_return_data" HorizontalAlignment="Left" Height="23" Margin="748,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
